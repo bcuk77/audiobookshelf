@@ -1,4 +1,4 @@
-# Bragibooks-Audiobookshelf: Implementation Notes
+# M4B-Metadata: Implementation Notes
 
 ## Project Overview
 
@@ -34,7 +34,7 @@ Based on research into Audiobookshelf's metadata handling, the following require
 ### Project Structure
 
 ```
-bragibooks-audiobookshelf/
+m4b-metadata/
 ├── utils/
 │   ├── audiobookshelf_metadata.py  # New: Audiobookshelf metadata writer
 │   ├── merge.py                    # Modified: Enhanced with ABS compatibility
@@ -141,9 +141,9 @@ For proper testing, the implementation should be validated with:
 ```yaml
 version: '3'
 services:
-  bragibooks-audiobookshelf:
+  m4b-metadata:
     build: .
-    container_name: bragibooks-audiobookshelf
+    container_name: m4b-metadata
     environment:
       - LOG_LEVEL=INFO
       - DEBUG=False
@@ -250,7 +250,7 @@ export LOG_LEVEL=DEBUG
 
 ## Conclusion
 
-The enhanced bragibooks-audiobookshelf implementation successfully addresses the key metadata compatibility requirements for Audiobookshelf while maintaining full backward compatibility with the original project. The modular design allows for easy maintenance and future enhancements while providing robust metadata handling specifically tailored for Audiobookshelf users.
+The enhanced M4B-Metadata implementation successfully addresses the key metadata compatibility requirements for Audiobookshelf while maintaining full backward compatibility with the original project. The modular design allows for easy maintenance and future enhancements while providing robust metadata handling specifically tailored for Audiobookshelf users.
 
 The implementation provides:
 

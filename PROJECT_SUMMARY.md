@@ -1,4 +1,4 @@
-# Bragibooks-Audiobookshelf: Project Summary
+# M4B-Metadata: Project Summary
 
 ## 🎯 Project Completion Status: ✅ COMPLETE
 
@@ -100,17 +100,17 @@ This project has successfully created an enhanced version of [bragibooks](https:
 
 1. **Clone the enhanced repository**:
 ```bash
-git clone https://github.com/your-username/bragibooks-audiobookshelf.git
-cd bragibooks-audiobookshelf
+git clone https://github.com/bcuk77/m4b-metadata.git
+cd m4b-metadata
 ```
 
 2. **Create Docker Compose file**:
 ```yaml
 version: '3'
 services:
-  bragibooks-audiobookshelf:
+  m4b-metadata:
     build: .
-    container_name: bragibooks-audiobookshelf
+    container_name: m4b-metadata
     environment:
       - LOG_LEVEL=INFO
       - DEBUG=False
@@ -194,7 +194,7 @@ The modular design allows for future improvements:
 
 ## 🎉 Conclusion
 
-The bragibooks-audiobookshelf project has been successfully completed, delivering a comprehensive solution that:
+The M4B-Metadata project has been successfully completed, delivering a comprehensive solution that:
 
 1. **Solves the ASIN Problem**: ASIN numbers are now preserved in M4B metadata
 2. **Fixes Author/Narrator Display**: Proper formatting ensures correct display in Audiobookshelf
@@ -206,4 +206,4 @@ Users can now process audiobooks with confidence that the resulting M4B files wi
 
 ---
 
-**Ready to Use**: The enhanced bragibooks-audiobookshelf is ready for production use and will significantly improve the Audiobookshelf experience for users processing audiobooks from various sources.
+**Ready to Use**: The enhanced M4B-Metadata is ready for production use and will significantly improve the Audiobookshelf experience for users processing audiobooks from various sources.
